@@ -2,9 +2,9 @@
 ini_set('display_errors', 1);
 $fName = $_POST['fName'];
 $lName = $_POST['lName'];
-$phoneNum = $_POST['phoneNumber'];
-$emailAdd = $_POST['emailAddress'];
-$discount = $_POST['discounts'];
+$phoneNum = $_POST['phoneNum'];
+$emailAdd = $_POST['emailAdd'];
+$discount = $_POST['discount'];
 
 $hostname = "us-cdbr-east-05.cleardb.net";
 $username = "b59b573e6c6aee";
