@@ -7,9 +7,9 @@ $emailAdd = $_POST['emailAdd'];
 $discount = $_POST['discount'];
 
 $hostname = "us-cdbr-east-05.cleardb.net";
-$username = "b59b573e6c6aee";
-$password = "4b777f16";
-$db = "heroku_4859b9997f503e5";
+$username = "b4180e16dfa8b6";
+$password = "47f73751";
+$db = "heroku_4718b6e92754e42";
 
 $conn = new mysqli($hostname, $username, $password, $db);
 
