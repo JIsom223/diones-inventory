@@ -10,7 +10,7 @@ $username = "b59b573e6c6aee";
 $password = "4b777f16";
 $db = "heroku_4859b9997f503e5";
 
-$conn = new mysqli($servername, $username, $password, $db);
+$conn = new mysqli_connect($servername, $username, $password, $db);
 
 if ($conn->connect_error){
 	die("Connection failed: ". $conn->connect_error);
