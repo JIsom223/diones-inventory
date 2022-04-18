@@ -1,13 +1,142 @@
+<!DOCTYPE html>
 <html>
+<head>
+    <meta charset="utf-8" />
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
 <body>
-<!---Test-->
-<form action="MemberForm.php" method="post">
-First name: <input type="text" name="fName"><br>
-Last name: <input type="text" name="lName"><br>
-Phone number: <input type="text" name="phoneNum"><br>
-Email Address: <input type="text" name="emailAdd"><br>
-Discount Percentage: <input type="text" name="discount"><br>
-<input type ="submit">
-</form>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper active-nav-link">
+                    <a href="index.html">Home</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="about.html">About</a>
+                </div>
+                <div class="nav-link-wrapper">
+                  <a href="membership.html">Become a member!</a>
+              </div>
+            </div>
+            
+            <div class="right-side">
+                <div class="brand">
+                    <div>Dione's Fashions</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-wrapper">
+            <div class="store-items-wrapper">
+                
+                <div class="store-item-wrapper">
+                    <div class="store-img-background" style="background-image:url(images/store1.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+					<a href="clothes.html"><img src="images/logos/Men's.png" alt="We have a wide variety of men's fashions."></a>
+                    </div>
+
+                    <div class="subtitle">
+                            We have a wide variety of men's fashions.
+                    </div>
+                    </div>
+                </div>
+            
+                <div class="store-item-wrapper">
+                    <div class="store-img-background" style="background-image:url(images/store2.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <a href="clothes.html"><img src="images/logos/Women's.png" alt="We have the hautest and hottest women's fashions."></a>
+                    </div>
+
+                    <div class="subtitle">
+                            We have the hautest and hottest women's fashions.
+                    </div>
+                    </div>
+                </div>
+
+                <div class="store-item-wrapper">
+                    <div class="store-img-background" style="background-image:url(images/store3.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <a href="clothes.html"><img src="images/logos/Boy's.png" alt="We have the best boy's fashions."></a>
+                    </div>
+
+                    <div class="subtitle">
+                            We have the best boy's fashions.
+                    </div>
+                    </div>
+                </div>
+
+                <div class="store-item-wrapper">
+                    <div class="store-img-background" style="background-image:url(images/store4.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <a href="clothes.html"><img src="images/logos/Girl's.png" alt="We have the freshest fashions fashions for girl's."></a>
+                    </div>
+
+                    <div class="subtitle">
+                            We have the freshest fashions fashions for girl's.
+                    </div>
+                    </div>
+                </div>
+
+               
+                <div class="store-item-wrapper">
+                    <div class="store-img-background" style="background-image:url(images/store5.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <a href="clothes.html"><img src="images/logos/Plus.png" alt="We have the perfect plus fashions."></a>
+                    </div>
+
+                    <div class="subtitle">
+                            We have the perfect plus fashions.
+                    </div>
+                    </div>
+                </div>
+
+                <div class="store-item-wrapper">
+                    <div class="store-img-background" style="background-image:url(images/store6.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <a href="clothes.html"><img src="images/logos/JuniorMissy.png" alt="We have the freshest fashions fashions for your young women."></a>
+                    </div>
+
+                    <div class="subtitle">
+                            We have the freshest fashions fashions for young women.
+                    </div>
+                    </div>
+                </div>
+
+            
+
+            </div>
+
+        </div>
+    </div>
+
 </body>
+<script>
+    const storeItems = document.querySelectorAll('.store-item-wrapper')
+
+    storeItems.forEach(storeItem =>{
+        storeItem.addEventListener('mouseover', () => {
+            storeItem.childNodes[1].classList.add('img-darken');
+        })
+    
+        storeItem.addEventListener('mouseout', () => {
+            storeItem.childNodes[1].classList.remove('img-darken');
+        })
+    })
+</script> 
 </html>
